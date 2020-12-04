@@ -7,7 +7,7 @@ public class PedestrianCrossing {
     private String status;
 
     public PedestrianCrossing(String id, int walkedCycleTime, Road roadAttachedTo) {
-        this.id = id;
+        this.id = "pedestrian_crossing_" + id;
         this.roadAttachedTo = roadAttachedTo;
         this.walkedCycleTime = walkedCycleTime;
         countdown = walkedCycleTime;
@@ -24,7 +24,7 @@ public class PedestrianCrossing {
     }
 
     public void printStatus() {
-        System.out.printf("pedestrian_crossing_%s is %s left in %s on %s at position (%s, %s).%n", this.getId(), this.countdown ,this.status, this.getRoadAttachedTo().getId(), this.location[0], this.location[1]);
+        System.out.printf("%s is %s left in %s on %s at position (%s, %s).%n", this.getId(), this.countdown ,this.status, this.getRoadAttachedTo().getId(), this.location[0], this.location[1]);
     }
 
     public String getId() {
