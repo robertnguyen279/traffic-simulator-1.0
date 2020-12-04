@@ -57,8 +57,6 @@ public class Main {
 
         // set locations and connections:
         roads.get(0).getConnectedRoads().add(roads.get(1)); // connect road_0 to road_1
-        roads.get(0).setPredestrianCrossing(pedestrianCrossings.get(0)); // add pedestrian crossing to road 0
-        roads.get(0).setLightsOnRoad(lights);
 
         //Simulation loop:
         System.out.println("Simulation:");

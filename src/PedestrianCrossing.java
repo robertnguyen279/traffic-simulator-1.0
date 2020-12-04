@@ -13,6 +13,7 @@ public class PedestrianCrossing {
         countdown = walkedCycleTime;
         this.location = new int[]{(roadAttachedTo.getEndLocation()[0] - roadAttachedTo.getStartLocation()[0]) / 2, (roadAttachedTo.getEndLocation()[1] - roadAttachedTo.getStartLocation()[1]) / 2}; // Always place pedestrian crossing at middle of the road.
         status = "free";
+        this.roadAttachedTo.setPredestrianCrossing(this);
     }
 
     public void launch() {
