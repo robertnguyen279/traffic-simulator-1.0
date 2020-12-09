@@ -50,7 +50,7 @@ public class Main {
         System.out.println("\nPedestrian Crossing:");
         ArrayList<PedestrianCrossing> pedestrianCrossings = new ArrayList<>();
         for (int i = 0; i < pedestrianCrossingSpawns; i++) {
-            pedestrianCrossings.add(new PedestrianCrossing(Integer.toString(i), walkedCycleTime, roads.get(0))); // all created lights will begin on road_0.
+            pedestrianCrossings.add(new PedestrianCrossing(Integer.toString(i), walkedCycleTime, roads.get(0))); // created pedestrian crossing will begin on middle of road_0.
             pedestrianCrossings.get(i).printStatus();
         }
         System.out.println();
