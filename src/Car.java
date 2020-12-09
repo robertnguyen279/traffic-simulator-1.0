@@ -30,7 +30,7 @@ public class Car {
     // This method only works for horizontal roads
     public void move() {
         boolean isTrafficLightRedWhenCarCome = !this.currentRoad.getLightsOnRoad().isEmpty() && this.position[0] == this.currentRoad.getLightsOnRoad().get(0).getLocation()[0] - 1 && this.currentRoad.getLightsOnRoad().get(0).getStatus().equals("red");
-        boolean isPedestrianWalkedWhenCarCome = (this.currentRoad.getPredestrianCrossing() != null) && this.currentRoad.getPredestrianCrossing().getLocation()[0] - 1 == this.position[0] && this.currentRoad.getPredestrianCrossing().getStatus().equals("walked"); // Only works for horizontal roads, vehicles must stop in front of crossing.
+        boolean isPedestrianWalkedWhenCarCome = (this.currentRoad.getPedestrianCrossing() != null) && this.currentRoad.getPedestrianCrossing().getLocation()[0] - 1 == this.position[0] && this.currentRoad.getPedestrianCrossing().getStatus().equals("walked"); // Only works for horizontal roads, vehicles must stop in front of crossing.
         if (isTrafficLightRedWhenCarCome || isPedestrianWalkedWhenCarCome) {
             this.speed = STOPPED;
         } else {

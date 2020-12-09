@@ -9,7 +9,7 @@ public class Road {
     private ArrayList<Car> carsOnRoad = new ArrayList<>();
     private ArrayList<TrafficLight> lightsOnRoad = new ArrayList<>();
     private ArrayList<Road> connectedRoads = new ArrayList<>();
-    private PedestrianCrossing predestrianCrossing;
+    private PedestrianCrossing pedestrianCrossing;
 
     public Road(String id, int speedLimit, int length, int[] startLocation) {
         this.id = "road_" + id;
@@ -96,11 +96,11 @@ public class Road {
         this.connectedRoads = connectedRoads;
     }
 
-    public PedestrianCrossing getPredestrianCrossing() {
-        return predestrianCrossing;
+    public PedestrianCrossing getPedestrianCrossing() {
+        return pedestrianCrossing;
     }
 
-    public void setPredestrianCrossing(PedestrianCrossing predestrianCrossing) {
-        this.predestrianCrossing = predestrianCrossing;
+    public void setPedestrianCrossing(PedestrianCrossing pedestrianCrossing) {
+        this.pedestrianCrossing = pedestrianCrossing;
     }
 }

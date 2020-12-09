@@ -39,8 +39,8 @@ public class RoadTest {
 
     @Test
     void shouldReturnPedestrianCrossing() {
-        road.setPredestrianCrossing(pedestrianCrossing);
-        assertEquals(pedestrianCrossing, road.getPredestrianCrossing());
+        road.setPedestrianCrossing(pedestrianCrossing);
+        assertEquals(pedestrianCrossing, road.getPedestrianCrossing());
     }
 
     @Test
